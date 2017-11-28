@@ -2,9 +2,9 @@
 #
 # docker run --rm \
 #   --init \
-#   -v /dev/shm:/dev/shm
+#   -v /dev/shm:/dev/shm \
 #   -p 9515:9515 \
-#   --name chromedriver
+#   --name chromedriver \
 #   akirakoyasu/chromedriver \
 #     --whitelisted-ips \
 #     --verbose
