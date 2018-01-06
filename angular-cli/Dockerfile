@@ -1,4 +1,5 @@
 FROM node:8.9
+LABEL maintainer="Akira Koyasu <mail@akirakoyasu.net>"
 
 RUN yarn global add @angular/cli \
   && ng set --global packageManager=yarn
