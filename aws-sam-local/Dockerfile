@@ -9,7 +9,7 @@
 #   sam --version
 #
 
-FROM node:8.9
+FROM node:8.11
 LABEL maintainer="Akira Koyasu <mail@akirakoyasu.net>"
 
 ARG sam_local_version="0.2.11"
