@@ -12,13 +12,13 @@
 FROM python:3.6-slim
 LABEL maintainer="Akira Koyasu <mail@akirakoyasu.net>"
 
-ARG sam_cli_version="0.8.1"
+ARG sam_cli_version="0.10.0"
 
 WORKDIR /var/lib/sam-cli
 
 RUN set -ex \
   && savedAptMark="$(apt-mark showmanual)" \
-  && apt-get update && apt-get install -y --no-install-recommends \
+  && apt-get update -qq && apt-get install -y --no-install-recommends \
   		gcc \
   		libc6-dev \
   \
