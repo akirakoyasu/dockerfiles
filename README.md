@@ -7,3 +7,4 @@
 - [chromedriver](https://hub.docker.com/r/akirakoyasu/chromedriver/)
 - [jekyll](https://hub.docker.com/r/akirakoyasu/jekyll/)
 - [ubuntu-essentials](https://hub.docker.com/r/akirakoyasu/ubuntu-essentials/)
+- [vue-cli](https://hub.docker.com/r/akirakoyasu/vue-cli/)
