@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:bionic
 LABEL maintainer="Akira Koyasu <mail@akirakoyasu.net>"
 
 RUN apt-get update && apt-get install -y \
