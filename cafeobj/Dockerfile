@@ -1,4 +1,4 @@
-FROM debian:jessie-slim
+FROM debian:buster-slim
 LABEL maintainer="Akira Koyasu <mail@akirakoyasu.net>"
 
 # sample:
@@ -9,10 +9,11 @@ LABEL maintainer="Akira Koyasu <mail@akirakoyasu.net>"
 #   -batch sample.cafe
 #
 
-ARG VERSION=1.5.7
+ARG VERSION=1.6.0
+ARG LISP=acl
 
-ADD https://cafeobj.org/files/${VERSION}/cafeobj-${VERSION}-sbcl-x64Linux.tar.gz /usr/local/src/
-RUN cd /usr/local/ && tar xvfz /usr/local/src/cafeobj-${VERSION}-sbcl-x64Linux.tar.gz
+ADD https://cafeobj.org/files/${VERSION}/cafeobj-${VERSION}-${LISP}-x64Linux.tar.gz /usr/local/src/
+RUN cd /usr/local/ && tar xvfz /usr/local/src/cafeobj-${VERSION}-${LISP}-x64Linux.tar.gz
 
 ENTRYPOINT ["cafeobj"]
 VOLUME /cafeobj
