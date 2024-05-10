@@ -12,7 +12,7 @@
 FROM python:3.11-slim
 LABEL maintainer="Akira Koyasu <mail@akirakoyasu.net>"
 
-ARG sam_cli_version="1.108.0"
+ARG sam_cli_version="1.116.0"
 
 WORKDIR /var/lib/sam-cli
 
