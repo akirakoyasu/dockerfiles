@@ -9,10 +9,10 @@
 #   --version
 #
 
-FROM python:3.11-slim
+FROM python:3.13-slim
 LABEL maintainer="Akira Koyasu <mail@akirakoyasu.net>"
 
-ARG sam_cli_version="1.116.0"
+ARG sam_cli_version="1.132.0"
 
 WORKDIR /var/lib/sam-cli
 
